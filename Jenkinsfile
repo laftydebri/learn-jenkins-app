@@ -2,8 +2,13 @@ pipeline {
     agent any
 
     stages {
-        steps {
-            echo "Hello World from Pipeline "
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                sh 'echo "Hello  from jenkins"'
+                sh 'whoami'
+                sh 'mkdir test'
+            }
         }
     }
 }
