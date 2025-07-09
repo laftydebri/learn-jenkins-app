@@ -1,5 +1,3 @@
-# writing an example Hello World pipeline
-
 pipeline {
     agent any
 
